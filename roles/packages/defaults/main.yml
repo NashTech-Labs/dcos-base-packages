@@ -1,0 +1,22 @@
+---
+
+common_default_packages:
+  - python-pip
+  - jq
+  - curl
+  - tar
+  - xz
+  - zip
+  - unzip
+  - ipset
+  - ntp
+  - cloud-init
+
+common_pip_packages:
+  - awscli
+
+common_removed_packages:
+  - chrony
+
+amazon_ssm_agent_url: #pass the url of your agent.
+

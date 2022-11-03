@@ -1,0 +1,9 @@
+---
+
+  - import_tasks: install.yml
+    tags: common_install
+ 
+  - name: Add ntpd cron on restart
+    shell: (crontab -l ; echo "@reboot ( sleep 90; /sbin/service ntpd restart )") | crontab -
+
+  
